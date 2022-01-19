@@ -13,7 +13,7 @@ public class Main {
     public static void main(String[] args) {
         DAO dAO = new LocationDAO();
         List<Locations> locations = dAO.getAll();
-        ConvertToXLSX convertToXLSX = new ConvertToXLSX("locations.xlsx");
+        ConvertToXLSX convertToXLSX = new ConvertToXLSX("locations_.xlsx");
         convertToXLSX.setLocations(locations);
         try {
             convertToXLSX.locationsToXLSX(convertToXLSX.locationHeaders, EntytyType.Location);
